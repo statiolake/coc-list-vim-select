@@ -15,7 +15,8 @@ function! coc_list_vim_select#start(items, opts, on_choice) abort
 endfunction
 
 function! coc_list_vim_select#on_choose(index) abort
-  call call(s:on_choice, [s:items[a:index], a:index])
+  echomsg "chosen " .. s:items[a:index]
+  call call(s:on_choice, [s:items[a:index], a:index + 1])
 endfunction
 
 function! coc_list_vim_select#on_cancel() abort
