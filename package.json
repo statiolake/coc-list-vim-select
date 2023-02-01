@@ -20,7 +20,7 @@
   },
   "prettier": {
     "singleQuote": true,
-    "printWidth": 120,
+    "printWidth": 78,
     "semi": true
   },
   "devDependencies": {
