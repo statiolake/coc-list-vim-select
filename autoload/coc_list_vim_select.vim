@@ -6,7 +6,11 @@ function! coc_list_vim_select#start(items, opts, on_choice) abort
   let s:items = a:items
   let s:opts = a:opts
   let s:on_choice = a:on_choice
-  let labels = map(copy(a:items), {_, v -> call(a:opts.format_item, [v])})
+  if has_key(a:opts, 'format_item')
+    let labels = map(copy(a:items), {_, v -> call(a:opts.format_item, [v])})
+  else
+    let labels = copy(a:items)
+  endif
   call CocAction('runCommand', 'coc-list-vim-select.start', labels)
 endfunction
 
