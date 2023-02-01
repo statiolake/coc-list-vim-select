@@ -1,6 +1,6 @@
 {
-  "name": "coc-list-vim-select",
-  "version": "0.0.0-development",
+  "name": "@statiolake/coc-list-vim-select",
+  "version": "0.1.0",
   "description": "vim.ui.select() support backed by coc-list",
   "author": "statiolake <statiolake@gmail.com>",
   "license": "MIT",
