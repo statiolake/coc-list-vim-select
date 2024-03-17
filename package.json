@@ -41,19 +41,19 @@
   "contributes": {
     "configuration": {
       "type": "object",
-      "title": "coc-list-vim-select configuration",
+      "title": "list-vim-select configuration",
       "properties": {
-        "coc-list-vim-select.enabled": {
+        "list-vim-select.enabled": {
           "type": "boolean",
           "default": true,
-          "description": "Enable coc-list-vim-select extension"
+          "description": "Enable list-vim-select extension"
         }
       }
     },
     "commands": [
       {
-        "command": "coc-list-vim-select.Command",
-        "title": "coc-list-vim-select command title"
+        "command": "list-vim-select.start",
+        "title": "Start vim.ui.select() backed by coc-list"
       }
     ]
   }
