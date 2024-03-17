@@ -6,7 +6,7 @@ function! coc_list_vim_select#start(version, labels, on_choose) abort
   let s:version = a:version
   let s:labels = a:labels
   let s:on_choose = a:on_choose
-  call CocAction('runCommand', 'coc-list-vim-select.start', s:labels)
+  call CocAction('runCommand', 'list-vim-select.start', s:labels)
 endfunction
 
 function! coc_list_vim_select#on_choose(index) abort
